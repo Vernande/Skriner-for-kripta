@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autorisation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="#" class="open-popup">Войти</a>
+    <!-- Autorisation -->
+    <section id="login">
+      <div class="popup-bg">
+        <div class="popup">
+          <div class="login-box">
+            <img class="close-popup" src="close-outline.png" alt="" />
+            <h2>Login</h2>
+            <form>
+              <div class="user-box">
+                <input type="text" />
+                <label>Username</label>
+              </div>
+              <div class="user-box">
+                <input type="password" />
+                <label>Password</label>
+              </div>
+              <a>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Войти
+              </a>
+              <a onclick="switchForm()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Зарегистрироваться
+              </a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="register" style="display: none">
+      <div class="popup-bg">
+        <div class="popup">
+          <div class="login-box">
+            <img class="close-popup" src="close-outline.png" alt="" />
+            <h2>Registration</h2>
+            <form>
+              <div class="user-box">
+                <input type="text" />
+                <label>Username</label>
+              </div>
+              <div class="user-box">
+                <input type="password" />
+                <label>Password</label>
+              </div>
+              <div class="user-box">
+                <input type="email" />
+                <label>Email</label>
+              </div>
+              <a onclick="switchForm()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Регистрация
+              </a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    >
+    <script src="jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
